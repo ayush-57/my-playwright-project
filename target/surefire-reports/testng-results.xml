@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-26T00:59:53 IST" name="Surefire suite" finished-at="2024-07-26T01:00:27 IST" duration-ms="34060">
+  <suite started-at="2024-07-26T03:15:08 IST" name="Surefire suite" finished-at="2024-07-26T03:15:38 IST" duration-ms="29565">
     <groups>
     </groups>
-    <test started-at="2024-07-26T00:59:53 IST" name="Surefire test" finished-at="2024-07-26T01:00:27 IST" duration-ms="34060">
+    <test started-at="2024-07-26T03:15:08 IST" name="Surefire test" finished-at="2024-07-26T03:15:38 IST" duration-ms="29565">
       <class name="com.example.tests.LoginTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.tests.LoginTests@2898ac89]" started-at="2024-07-26T00:59:53 IST" name="setUp" finished-at="2024-07-26T00:59:58 IST" duration-ms="5477" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.tests.LoginTests@2898ac89]" started-at="2024-07-26T03:15:08 IST" name="setUp" finished-at="2024-07-26T03:15:15 IST" duration-ms="6443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="shadowElement()[pri:0, instance:com.example.tests.LoginTests@2898ac89]" started-at="2024-07-26T00:59:58 IST" name="shadowElement" finished-at="2024-07-26T01:00:10 IST" duration-ms="11278" status="PASS">
+        <test-method signature="shadowElement()[pri:0, instance:com.example.tests.LoginTests@2898ac89]" started-at="2024-07-26T03:15:15 IST" name="shadowElement" finished-at="2024-07-26T03:15:21 IST" duration-ms="6277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shadowElement -->
-        <test-method signature="testLoginFailures()[pri:0, instance:com.example.tests.LoginTests@2898ac89]" started-at="2024-07-26T01:00:10 IST" name="testLoginFailures" finished-at="2024-07-26T01:00:15 IST" duration-ms="4869" status="PASS">
+        <test-method signature="testLoginFailures()[pri:0, instance:com.example.tests.LoginTests@2898ac89]" started-at="2024-07-26T03:15:21 IST" name="testLoginFailures" finished-at="2024-07-26T03:15:25 IST" duration-ms="4019" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginFailures -->
-        <test-method signature="testLoginSuccess()[pri:0, instance:com.example.tests.LoginTests@2898ac89]" started-at="2024-07-26T01:00:15 IST" name="testLoginSuccess" finished-at="2024-07-26T01:00:22 IST" duration-ms="7489" status="PASS">
+        <test-method signature="testLoginSuccess()[pri:0, instance:com.example.tests.LoginTests@2898ac89]" started-at="2024-07-26T03:15:25 IST" name="testLoginSuccess" finished-at="2024-07-26T03:15:33 IST" duration-ms="8360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginSuccess -->
-        <test-method signature="testPasswordVisibilityToggle()[pri:0, instance:com.example.tests.LoginTests@2898ac89]" started-at="2024-07-26T01:00:22 IST" name="testPasswordVisibilityToggle" finished-at="2024-07-26T01:00:23 IST" duration-ms="850" status="PASS">
+        <test-method signature="testPasswordVisibilityToggle()[pri:0, instance:com.example.tests.LoginTests@2898ac89]" started-at="2024-07-26T03:15:33 IST" name="testPasswordVisibilityToggle" finished-at="2024-07-26T03:15:35 IST" duration-ms="1030" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPasswordVisibilityToggle -->
-        <test-method signature="testUpdatePassword()[pri:0, instance:com.example.tests.LoginTests@2898ac89]" started-at="2024-07-26T01:00:23 IST" name="testUpdatePassword" finished-at="2024-07-26T01:00:27 IST" duration-ms="3617" status="PASS">
+        <test-method signature="testUpdatePassword()[pri:0, instance:com.example.tests.LoginTests@2898ac89]" started-at="2024-07-26T03:15:35 IST" name="testUpdatePassword" finished-at="2024-07-26T03:15:38 IST" duration-ms="2998" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdatePassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.LoginTests@2898ac89]" started-at="2024-07-26T01:00:27 IST" name="tearDown" finished-at="2024-07-26T01:00:27 IST" duration-ms="408" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.tests.LoginTests@2898ac89]" started-at="2024-07-26T03:15:38 IST" name="tearDown" finished-at="2024-07-26T03:15:38 IST" duration-ms="378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

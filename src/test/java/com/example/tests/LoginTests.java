@@ -5,6 +5,7 @@ import com.microsoft.playwright.Playwright;
 import com.example.pages.LoginPage;
 import com.example.utils.ConfigReader;
 import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.BrowserType.LaunchOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -26,6 +27,24 @@ public class LoginTests {
         configReader = new ConfigReader();
         playwright = Playwright.create();
         browser = playwright.chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(false));
+        String browserType = configReader.getProperty("browser.type");
+
+        switch (browserType.toLowerCase()) {
+            case "chromium":
+                browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+                break;
+            case "chrome":
+                browser = playwright.chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(false));
+                break;
+            case "firefox":
+                browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false));
+                break;
+            case "webkit":
+                browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false));
+                break;
+            default:
+                break;
+        }
         page = browser.newPage();
         loginPage = new LoginPage(page);
         loginPageUrl = configReader.getProperty("login.url");
