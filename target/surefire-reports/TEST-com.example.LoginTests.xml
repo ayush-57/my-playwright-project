@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.LoginTests" time="10.705" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.LoginTests" time="37.529" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\ayush\AppData\Local\Temp\surefire17640215343093392359\surefirebooter2855505683939012881.jar C:\Users\ayush\AppData\Local\Temp\surefire17640215343093392359 2024-07-25T22-05-56_676-jvmRun1 surefire13921088666884169053tmp surefire_011447447571830007539tmp"/>
+    <property name="sun.java.command" value="C:\Users\ayush\AppData\Local\Temp\surefire6603187167900186873\surefirebooter7461617856665447613.jar C:\Users\ayush\AppData\Local\Temp\surefire6603187167900186873 2024-07-26T00-03-30_455-jvmRun1 surefire16543936301407474010tmp surefire_018324106865982152079tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\ayush\VsCodeProjects\my-playwright-project\target\test-classes;C:\Users\ayush\VsCodeProjects\my-playwright-project\target\classes;C:\Users\ayush\.m2\repository\com\microsoft\playwright\playwright\1.42.0\playwright-1.42.0.jar;C:\Users\ayush\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\ayush\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ayush\.m2\repository\com\microsoft\playwright\driver\1.42.0\driver-1.42.0.jar;C:\Users\ayush\.m2\repository\com\microsoft\playwright\driver-bundle\1.42.0\driver-bundle-1.42.0.jar;C:\Users\ayush\.m2\repository\org\testng\testng\7.7.0\testng-7.7.0.jar;C:\Users\ayush\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\ayush\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\ayush\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\ayush\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.8.2\log4j-to-slf4j-2.8.2.jar;C:\Users\ayush\.m2\repository\org\apache\logging\log4j\log4j-api\2.8.2\log4j-api-2.8.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\ayush\AppData\Local\Temp\surefire17640215343093392359\surefirebooter2855505683939012881.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ayush\AppData\Local\Temp\surefire6603187167900186873\surefirebooter7461617856665447613.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.2+9"/>
@@ -60,5 +60,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testPasswordVisibilityToggle" classname="com.example.LoginTests" time="5.062"/>
+  <testcase name="shadownElement" classname="com.example.LoginTests" time="14.462"/>
+  <testcase name="testLoginFailure" classname="com.example.LoginTests" time="5.584"/>
+  <testcase name="testLoginSuccess" classname="com.example.LoginTests" time="7.581"/>
+  <testcase name="testPasswordVisibilityToggle" classname="com.example.LoginTests" time="1.254"/>
 </testsuite>

@@ -10,13 +10,10 @@ public class LoginPage {
         this.page = page;
     }
 
-    public void navigateToLoginPage() {
-        page.navigate("https://demo.haroldwaste.com/");
-    }
-
+    // Method to validate page redirection
     public boolean validatePageRedirectionAfterLogin() {
         page.waitForSelector(LoginPageConstants.PURCHASES_TAB_HEADING);
-        return page.url().equals("https://demo.haroldwaste.com/purchases");
+        return page.url().equals(LoginPageConstants.REDIRECTED_URL);
     }
 
     // Method to enter email
@@ -42,7 +39,8 @@ public class LoginPage {
 
     // Method to get error message text
     public boolean getErrorMessage() {
-        return page.waitForSelector(LoginPageConstants.INCORRECT_CREDS_TOASTER).innerText().equals("Your email and/or password are incorrects");
+        return page.waitForSelector(LoginPageConstants.INCORRECT_CREDS_TOASTER).innerText()
+                .equals("Your email and/or password are incorrects");
     }
 
     public void logout() {
@@ -52,7 +50,8 @@ public class LoginPage {
     }
 
     public boolean validateEmptyFieldsErrors() {
-        return page.isVisible(LoginPageConstants.EMAIL_REQUIRED) && page.isVisible(LoginPageConstants.PASSWORD_REQUIRED);
+        return page.isVisible(LoginPageConstants.EMAIL_REQUIRED)
+                && page.isVisible(LoginPageConstants.PASSWORD_REQUIRED);
     }
 
     public boolean validateInvalidEmailError() {
@@ -66,16 +65,22 @@ public class LoginPage {
         clickLoginButton();
     }
 
+    // Methods to validate password visibility toggle
     public boolean validatePasswordVisibilityToggleOff() {
         page.waitForSelector(LoginPageConstants.TOGGLE_PASSWD_VISIBILITY).click();
-        return page.waitForSelector(LoginPageConstants.TOGGLE_PASSWD_VISIBILITY_SVG).getAttribute("data-testid").equals("VisibilityOffIcon") && page.waitForSelector(LoginPageConstants.PASSWORD).getAttribute("type").equals("password");
+        return page.waitForSelector(LoginPageConstants.TOGGLE_PASSWD_VISIBILITY_SVG).getAttribute("data-testid")
+                .equals("VisibilityOffIcon")
+                && page.waitForSelector(LoginPageConstants.PASSWORD).getAttribute("type").equals("password");
     }
 
     public boolean validatePasswordVisibilityToggleOn() {
         page.waitForSelector(LoginPageConstants.TOGGLE_PASSWD_VISIBILITY).click();
-        return page.waitForSelector(LoginPageConstants.TOGGLE_PASSWD_VISIBILITY_SVG).getAttribute("data-testid").equals("VisibilityIcon") && page.waitForSelector(LoginPageConstants.PASSWORD).getAttribute("type").equals("text");
+        return page.waitForSelector(LoginPageConstants.TOGGLE_PASSWD_VISIBILITY_SVG).getAttribute("data-testid")
+                .equals("VisibilityIcon")
+                && page.waitForSelector(LoginPageConstants.PASSWORD).getAttribute("type").equals("text");
     }
 
+    // Method to interact with shadow element
     public void visitShadowElementLink() {
         page.navigate("https://selectorshub.com/iframe-in-shadow-dom/");
         page.locator("#userName #pizza").fill("ayush testing");
