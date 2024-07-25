@@ -1,4 +1,4 @@
-package com.example.constants;
+package com.example.pages.constants;
 
 public class LoginPageConstants {
 

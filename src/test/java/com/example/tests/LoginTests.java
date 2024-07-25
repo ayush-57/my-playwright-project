@@ -1,7 +1,8 @@
-package com.example;
+package com.example.tests;
 
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
+import com.example.pages.LoginPage;
 import com.example.utils.ConfigReader;
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType.LaunchOptions;

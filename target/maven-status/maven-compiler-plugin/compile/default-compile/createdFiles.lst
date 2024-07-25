@@ -1,2 +1,2 @@
-com\example\constants\LoginPageConstants.class
-com\example\LoginPage.class
+com\example\pages\constants\LoginPageConstants.class
+com\example\pages\LoginPage.class

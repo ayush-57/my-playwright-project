@@ -1,2 +1,2 @@
-com\example\LoginTests.class
 com\example\utils\ConfigReader.class
+com\example\tests\LoginTests.class

@@ -1,6 +1,6 @@
-package com.example;
+package com.example.pages;
 
-import com.example.constants.LoginPageConstants;
+import com.example.pages.constants.LoginPageConstants;
 import com.microsoft.playwright.Page;
 
 public class LoginPage {
