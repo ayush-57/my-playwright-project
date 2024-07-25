@@ -42,7 +42,15 @@ public class LoginTests {
     }
 
     @Test
-    public void testLoginFailure() {
+    public void testUpdatePassword() {
+        page.navigate(loginPageUrl);
+        loginPage.login(email, password);
+        Assert.assertTrue(loginPage.validateUpdatePasswordPopup(password, "123123123", "1231231231"),
+                "Password Do Not Match error not displayed");
+    }
+
+    @Test
+    public void testLoginFailures() {
         page.navigate(loginPageUrl);
         loginPage.login("", "");
         Assert.assertTrue(loginPage.validateEmptyFieldsErrors(), "Errors for empty inputs not displayed");
@@ -61,8 +69,8 @@ public class LoginTests {
     }
 
     @Test
-    public void shadownElement() {
-        loginPage.visitShadowElementLink();
+    public void shadowElement() {
+        loginPage.validateElementInShadowRoot();
     }
 
     @AfterClass

@@ -5,9 +5,9 @@
     <classes>
       <class name="com.example.LoginTests">
         <methods>
-          <include name="testPasswordVisibilityToggle"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="testUpdatePassword"/>
         </methods>
       </class> <!-- com.example.LoginTests -->
     </classes>
