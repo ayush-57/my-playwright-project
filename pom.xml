@@ -37,9 +37,6 @@
                     <includes>
                         <include>**/*Tests.java</include>
                     </includes>
-                    <testngXmlFiles>
-                        <testngXmlFile>src/test/resources/testng.xml</testngXmlFile>
-                    </testngXmlFiles>
                 </configuration>
             </plugin>
         </plugins>
